@@ -1,21 +1,25 @@
-package com.example.github.model
+package com.example.github.model.data
 
 
 import com.google.gson.annotations.SerializedName
 
-data class DetailUser(
+data class Data(
     @SerializedName("avatar_url")
     val avatarUrl: String,
     @SerializedName("bio")
-    val bio: Any,
+    val bio: String,
     @SerializedName("blog")
     val blog: String,
+    @SerializedName("collaborators")
+    val collaborators: Int,
     @SerializedName("company")
     val company: String,
     @SerializedName("created_at")
     val createdAt: String,
+    @SerializedName("disk_usage")
+    val diskUsage: Int,
     @SerializedName("email")
-    val email: Any,
+    val email: String,
     @SerializedName("events_url")
     val eventsUrl: String,
     @SerializedName("followers")
@@ -31,7 +35,7 @@ data class DetailUser(
     @SerializedName("gravatar_id")
     val gravatarId: String,
     @SerializedName("hireable")
-    val hireable: Any,
+    val hireable: Boolean,
     @SerializedName("html_url")
     val htmlUrl: String,
     @SerializedName("id")
@@ -46,6 +50,12 @@ data class DetailUser(
     val nodeId: String,
     @SerializedName("organizations_url")
     val organizationsUrl: String,
+    @SerializedName("owned_private_repos")
+    val ownedPrivateRepos: Int,
+    @SerializedName("plan")
+    val plan: Plan,
+    @SerializedName("private_gists")
+    val privateGists: Int,
     @SerializedName("public_gists")
     val publicGists: Int,
     @SerializedName("public_repos")
@@ -60,8 +70,12 @@ data class DetailUser(
     val starredUrl: String,
     @SerializedName("subscriptions_url")
     val subscriptionsUrl: String,
+    @SerializedName("total_private_repos")
+    val totalPrivateRepos: Int,
     @SerializedName("twitter_username")
-    val twitterUsername: Any,
+    val twitterUsername: String,
+    @SerializedName("two_factor_authentication")
+    val twoFactorAuthentication: Boolean,
     @SerializedName("type")
     val type: String,
     @SerializedName("updated_at")
