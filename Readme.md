@@ -1,4 +1,4 @@
-GitHub User App (K)
+GitHub User App (Kotlin)
 ===
 User List
 ---
