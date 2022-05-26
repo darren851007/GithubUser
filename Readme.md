@@ -14,6 +14,7 @@ Deatail User
   When click the chosen user, it would get received 'login' message from User List then to get detail user infomation from github Get a User api.
   
     In the detail information page, it would bind the related infromation into the detail view
+    If there are any infomation is null, it would be the empty textView
     1. User name
     2. User's picture
     3. User bio
